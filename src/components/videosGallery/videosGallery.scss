@@ -1,0 +1,30 @@
+@import '../../breakpoints/breakpoints';
+
+.videoGallery {
+  .video-title {
+    @include s {
+      text-align: center;
+    }
+  }
+  .videos-container {
+    display: flex;
+    gap: 5px;
+    @include l {
+      flex-wrap: wrap;
+    }
+    img {
+      margin: 10px 0;
+      width: 200px;
+      height: 150px;
+      border-radius: 4px;
+      object-fit: cover;
+      @include s {
+        width: 100%;
+      }
+    }
+    img:hover {
+      cursor: pointer;
+      opacity: 0.3;
+    }
+  }
+}

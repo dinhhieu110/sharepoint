@@ -1,0 +1,19 @@
+.document-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .doc-title {
+    font-weight: 600;
+  }
+  .doc-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+    .doc-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

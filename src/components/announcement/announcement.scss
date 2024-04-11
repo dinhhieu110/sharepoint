@@ -1,0 +1,11 @@
+@import '../../breakpoints/breakpoints';
+.announcement-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .announcement-title {
+    @include s {
+      text-align: center;
+    }
+  }
+}

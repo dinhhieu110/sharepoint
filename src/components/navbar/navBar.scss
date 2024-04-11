@@ -1,0 +1,73 @@
+@import '../../breakpoints/breakpoints';
+$border-radius: 3px;
+
+.navbar-container {
+  background-color: #333333;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  .logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    p {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+  .search-row {
+    background-color: #e1dfdd;
+    display: flex;
+    align-items: center;
+    width: 468px;
+    border-radius: 4px;
+    @include l {
+      display: none;
+    }
+    .searchBtn {
+      cursor: pointer;
+      border: none;
+      background-color: #e1dfdd;
+      border-top-left-radius: $border-radius;
+      color: #0077bb;
+      border-bottom-left-radius: $border-radius;
+      padding: $border-radius;
+      align-items: center;
+    }
+    input {
+      border: none;
+      outline: none;
+      background-color: #e1dfdd;
+      height: 100%;
+      padding: 5px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  .setting-row {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 15px;
+    margin-right: 15px;
+    height: 100%;
+    li:hover {
+      cursor: pointer;
+      font-weight: 400;
+    }
+    li {
+      width: 21px;
+      height: 21px;
+      font-weight: 500;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}

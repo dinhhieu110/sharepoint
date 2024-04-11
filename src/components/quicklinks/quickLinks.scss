@@ -1,0 +1,38 @@
+@import '../../breakpoints/breakpoints';
+.quicklinks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .quicklink-title {
+    @include s {
+      text-align: center;
+    }
+  }
+  .quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    .box {
+      background-color: #0074bd;
+      color: #fff;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      p {
+        font-size: 14px;
+      }
+      .icon {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .box:hover {
+      background-color: #5789a8;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+  img {
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  .news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-weight: 700;
+    }
+    .para {
+      line-height: 1.2;
+      font-weight: 500;
+    }
+    .foot {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .date {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+      }
+      .moreBtn {
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: none;
+        background-color: #e4e6e8;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../breakpoints/breakpoints';
+.menu-container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  @include l {
+    justify-content: center;
+  }
+  // gap: 10px;
+  margin-bottom: 20px;
+  img {
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    @include m {
+      display: none;
+    }
+  }
+  .menuList {
+    display: flex;
+    list-style-type: none;
+    li:hover {
+      background-color: rgb(202, 214, 225);
+    }
+    li {
+      padding: 20px;
+      font-size: 16px;
+      font-weight: 550;
+      cursor: pointer;
+    }
+  }
+}

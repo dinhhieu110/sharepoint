@@ -1,0 +1,40 @@
+@import '../../breakpoints/breakpoints';
+$border-radius: 3px;
+.how-container {
+  .how-title {
+    @include s {
+      text-align: center;
+    }
+  }
+  .search-question {
+    border: 1px solid #707070;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .searchQuestionBtn {
+      cursor: pointer;
+      border: none;
+      background-color: #fff;
+      padding: 3px 5px;
+      color: #0077bb;
+      padding: $border-radius;
+      align-items: center;
+      outline: none;
+      margin-top: 3px;
+    }
+    input {
+      border: none;
+      width: 100%;
+      outline: none;
+      height: 100%;
+      padding: 5px;
+      padding: 10px;
+    }
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 4px;
+  }
+}
